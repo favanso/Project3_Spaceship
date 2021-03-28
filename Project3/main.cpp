@@ -5,8 +5,10 @@ using namespace std;
 
 int main() {
 	
-	
-	
+	Spaceship space("JJ", "fe", 50, 50, 100);
+
+	space.takeDamage(5);
+		
 	
 	
 	
