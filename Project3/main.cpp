@@ -7,30 +7,37 @@
 using namespace std;
 
 int main() {
-	ofstream archieve;
-
-	archieve.open("shi.txt");
-
+	ifstream file;
+	string word;
 	
+	//Spaceship *spaceshipPoint;
+	vector<Spaceship*> spaceShips;
+
+
+
+
+	file.open("ships.txt");
+	if (file.is_open()) {
+		while (file >> word) {
+			cout << word << endl;
+			//Arrray of words and loop in the array to use for 
+			//spaceship = new Spaceship(line);
+			//spaceShips.push_back(Spaceship)
+		}
+		file.close();
+	}
+	else {
+		cout << "failed to open the file." << endl;
+	}
 	
-
-	/*Spaceship* spaceshipPoint;
-	spaceshipPoint = new Spaceship("JJ", "fe", 50, 50, 100);
-
-	vector<spaceshipPoint*> spaceShips;*/
-	
-	//Looping using spaceShips.pushback(value)
-
-
-	//delete spaceshipPoint;
-	
+	//Loop throw the vector
 	
 	//for (int test : spaceShips)
-		//cout << test << " ";
+		//cout << Starship << " ";
 	
 	
 	
-	
+	//delete spaceshipPoint;
 	
 	return 0;
 }
