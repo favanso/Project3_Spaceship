@@ -1,17 +1,32 @@
 #include <iostream>
-using namespace std;
 #include "Spaceship.h"
 #include <string>
+#include<fstream>
+#include <vector>
+
+using namespace std;
 
 int main() {
-	
-	Spaceship space("JJ", "fe", 50, 50, 100);
+	ofstream archieve;
 
-	space.takeDamage(5);
-		
+	archieve.open("shi.txt");
+
 	
 	
+
+	/*Spaceship* spaceshipPoint;
+	spaceshipPoint = new Spaceship("JJ", "fe", 50, 50, 100);
+
+	vector<spaceshipPoint*> spaceShips;*/
 	
+	//Looping using spaceShips.pushback(value)
+
+
+	//delete spaceshipPoint;
+	
+	
+	//for (int test : spaceShips)
+		//cout << test << " ";
 	
 	
 	
