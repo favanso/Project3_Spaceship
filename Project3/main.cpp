@@ -12,28 +12,43 @@ int main() {
 	
 	//Spaceship *spaceshipPoint;
 	vector<Spaceship*> spaceShips;
-
-
+	vector<string> words;
 
 
 	file.open("ships.txt");
 	if (file.is_open()) {
 		while (file >> word) {
-			cout << word << endl;
-			//Arrray of words and loop in the array to use for 
-			//spaceship = new Spaceship(line);
-			//spaceShips.push_back(Spaceship)
+			words.push_back(word);
+			cout << std::word;
 		}
+		int sizeWord = word.size();
+		cout << sizeWord<< endl;
+		
+		/*for (int i = 0; i < sizeWord; i++) {
+
+		}*/
+
+			
+			//spaceship = new Spaceship(words[1]);
+			//spaceShips.push_back(Spaceship)
+		
 		file.close();
 	}
 	else {
 		cout << "failed to open the file." << endl;
 	}
 	
-	//Loop throw the vector
-	
-	//for (int test : spaceShips)
-		//cout << Starship << " ";
+
+
+
+
+
+
+	//Loop the vector of pointers
+	//for (int test : spaceShips){
+		//cout << "Starship " << &spaceShip.getShipName << " is captained by " << &spaceShip.getCaptainName <<
+		// ". It has shield strenght of " << &spaceShip.getShieldStrenght << ", "<< &spaceShip.getNumPhasers<<" phasers, and "
+		// <<  &spaceShip.getNumPhotons<<" photon torpedoes.";}
 	
 	
 	

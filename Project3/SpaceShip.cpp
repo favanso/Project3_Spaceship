@@ -36,7 +36,9 @@ void Spaceship::takeDamage(int damage) {
 
 	newShieldStrenght = getShieldStrenght() - damage;
 	if (newShieldStrenght == 0) {
-		std::cout << "Ship has been destroyed"  << std::endl;
+		std::cout << "Ship has been destroyed" << std::endl;
 	}
-	else std::cout << "Shields are now at "<< newShieldStrenght <<" percent." << std::endl;
+	else std::cout << "Shields are now at " << newShieldStrenght << " percent." << std::endl;
+}
+
 }

@@ -26,6 +26,6 @@ public:
 
 	void takeDamage(int damage);
 
-};
+	};
 #endif 
 
