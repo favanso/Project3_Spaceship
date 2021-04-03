@@ -19,7 +19,7 @@ int main() {
 	if (file.is_open()) {
 		while (file >> word) {
 			words.push_back(word);
-			cout << std::word;
+			cout << word;
 		}
 		int sizeWord = word.size();
 		cout << sizeWord<< endl;
