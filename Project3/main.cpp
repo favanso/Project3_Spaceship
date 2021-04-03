@@ -3,6 +3,7 @@
 #include <string>
 #include<fstream>
 #include <vector>
+#include<stdlib.h>
 
 using namespace std;
 
@@ -37,22 +38,22 @@ int main() {
 	spaceshipVec.push_back(spacePoint2);
 	spaceshipVec.push_back(spacePoint3);
 
+
 	for (Spaceship* space : spaceshipVec){
 
-		cout << space << endl;
-		/*cout << "Starship " << spaceship1.getShipName() << " is captained by " << spaceship1.getCaptainName() <<
-		". It has shield strenght of " << spaceship1.getShieldStrenght() << ", " << spaceship1.getNumPhasers() << " phasers, and "
-		<< spaceship1.getNumPhotons() << " photon torpedoes." << endl;*/
-
-		//spaceship1.takeDamage(50);
-	
-	
-		delete spacePoint;
-		delete spacePoint2;
-		delete spacePoint3;
+		cout << "Starship " << space->getShipName() << " is captained by " << space->getCaptainName() <<
+		". It has shield strenght of " << space->getShieldStrenght() << ", " << space->getNumPhasers() << " phasers, and "
+		<< space->getNumPhotons() << " photon torpedoes." << endl;
+		
+		int hit;
+		hit = rand() % 100;
+		space->takeDamage(hit);
+		
 	}
 	
-	
+	delete spacePoint;
+	delete spacePoint2;
+	delete spacePoint3;
 
 	
 	return 0;

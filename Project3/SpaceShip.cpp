@@ -32,13 +32,15 @@ int Spaceship::getNumPhotons() {
 }
 
 void Spaceship::takeDamage(int damage) {
+	
 	int newShieldStrenght;
-
 	newShieldStrenght = getShieldStrenght() - damage;
+	
 	if (newShieldStrenght == 0) {
 		std::cout << "Ship has been destroyed" << std::endl;
 	}
-	else std::cout << "Shields are now at " << newShieldStrenght << " percent." << std::endl;
+	else std::cout << shipName << " was hit with attack of "<< (getShieldStrenght()-newShieldStrenght) << 
+		". Shields are now at " << newShieldStrenght << " percent." << std::endl<< std::endl;
 
 
 }
