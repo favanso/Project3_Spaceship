@@ -29,7 +29,7 @@ int main() {
 		
 		}
 
-		file.close();
+		infile.close();
 
 	}
 	else {

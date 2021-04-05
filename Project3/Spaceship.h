@@ -25,9 +25,9 @@ public:
 	int getNumPhotons();
 
 	void takeDamage(int damage);
-	
+
 	void printShip();
 
-	};
+};
 #endif 
 
