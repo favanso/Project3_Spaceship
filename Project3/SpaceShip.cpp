@@ -42,5 +42,12 @@ void Spaceship::takeDamage(int damage) {
 	else std::cout << shipName << " was hit with attack of "<< (getShieldStrenght()-newShieldStrenght) << 
 		". Shields are now at " << newShieldStrenght << " percent." << std::endl<< std::endl;
 
+}
 
+
+void Spaceship::printShip()
+{
+	std::cout << "Starship " << getShipName() << " is captained by " << getCaptainName() <<
+		". It has shield strenght of " << getShieldStrenght() << ", " << getNumPhasers() << " phasers, and "
+		<< getNumPhotons() << " photon torpedoes." << std::endl;
 }
